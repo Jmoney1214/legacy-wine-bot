@@ -1,0 +1,92 @@
+# 🚀 CLAUDE CODE QUICK COMMANDS
+
+## Copy & Paste These Commands Directly into Claude Code Terminal
+
+### 1. INITIAL SETUP
+```bash
+# Navigate to folder
+cd ~/Desktop/CLAUD\ RECON
+
+# Verify setup
+python3 verify-setup.py
+
+# Copy environment template
+cp .env.example .env
+
+# Edit with your tokens
+nano .env
+```
+
+### 2. TEST CONNECTIONS
+```bash
+# Test Slack Bot
+claude mcp zapier slack_find_user_by_name '{"full_name": "Legacy Wine MCP Bot", "instructions": "Find Legacy Wine bot"}'
+
+# Test Channel Access
+claude mcp zapier slack_get_conversation '{"channel": "claude", "instructions": "Verify #claude channel access"}'
+
+# Test Instagram (dry run)
+claude mcp zapier instagram_for_business_publish_photo_s '{"instructions": "Test Instagram connection", "caption": "TEST - DO NOT POST", "media": "https://example.com/test.jpg", "instagramPageId": "YOUR_PAGE_ID"}'
+```
+
+### 3. START AUTOMATION```bash
+# Run the automation
+python3 claude-code-zap-execution.py
+
+# Or use quick start
+./start-automation.sh
+```
+
+### 4. MONITOR REACTIONS
+```bash
+# Check for messages with reactions
+claude mcp zapier slack_find_message '{"instructions": "Find messages from Legacy Wine MCP Bot in #claude with white_check_mark reactions from last hour", "query": "from:Legacy Wine MCP Bot in:#claude has:white_check_mark", "sort_by": "timestamp", "sort_dir": "desc"}'
+
+# Get specific message reactions
+claude mcp zapier slack_get_message_reactions '{"channel": "CHANNEL_ID", "timestamp": "MESSAGE_TS", "instructions": "Get reactions for message"}'
+```
+
+### 5. POST TO INSTAGRAM MANUALLY
+```bash
+# Manual Instagram post
+claude mcp zapier instagram_for_business_publish_photo_s '{"instructions": "Post to Instagram", "caption": "Your caption with #hashtags", "media": "https://your-image-url.jpg", "instagramPageId": "YOUR_PAGE_ID"}'
+```
+
+### 6. SEND SLACK CONFIRMATION
+```bash
+# Send message to Slack
+claude mcp zapier slack_send_channel_message '{"instructions": "Send confirmation to #claude", "channel": "#claude", "text": "✅ Posted to Instagram successfully!", "as_bot": "true"}'
+```
+### 7. DEBUGGING
+```bash
+# Check automation logs
+tail -f /tmp/legacy-wine-automation.log
+
+# List active Zapier connections
+claude mcp zapier list
+
+# Test specific message parsing
+python3 -c "
+from claude_code_zap_execution import LegacyWineZapAutomation
+bot = LegacyWineZapAutomation()
+text = '''Caption: Test caption
+Image: https://example.com/image.jpg
+Publish: Now'''
+print(bot.parse_message(text))
+"
+```
+
+### 8. TROUBLESHOOTING
+```bash
+# If tokens not working
+claude mcp zapier add_tools  # Add new Zapier tools
+claude mcp zapier edit_tools  # Edit existing tools
+
+# If channel not found
+# Get exact channel ID from Slack (starts with C)
+# Update in .env file
+
+# If Instagram fails
+# Ensure Business Account is connected to Facebook Page
+# Token must have instagram_basic and pages_show_list permissions
+```

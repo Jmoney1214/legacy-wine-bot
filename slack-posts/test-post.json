@@ -1,0 +1,12 @@
+{
+  "channel": "C09M2PHPRJ6",
+  "text": "🧪 TEST POST - Image Mapping Fix\n\nThis is a test to verify Instagram gets the correct image from Slack attachments.\n\n#TestPost #LegacyWine\n\n---\n✅ React with ✅ after fixing the Media field in your Zap!",
+  "attachments": [
+    {
+      "fallback": "Test Image",
+      "image_url": "https://images.unsplash.com/photo-1574169208507-84376144848b?w=1080&q=80"
+    }
+  ],
+  "unfurl_links": false,
+  "unfurl_media": true
+}

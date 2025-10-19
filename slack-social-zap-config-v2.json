@@ -1,0 +1,28 @@
+{
+  "zap_name": "Legacy Wine Slack to Social Media",
+  "version": "2.0",
+  "updated": "2025-01-19",
+  "authentication": {
+    "slack": {
+      "workspace": "YOUR_WORKSPACE_NAME",
+      "bot_token": "xoxb-YOUR-SLACK-BOT-TOKEN",
+      "user_token": "xoxp-YOUR-SLACK-USER-TOKEN",
+      "channel_id": "C_CHANNEL_ID_FOR_CLAUDE",
+      "bot_user_id": "U_BOT_USER_ID_LEGACY_WINE"
+    },
+    "instagram": {
+      "auth_method": "OAuth",
+      "connection_name": "YOUR_INSTAGRAM_CONNECTION",
+      "instagram_account_id": "AUTO_DETECTED_OR_MANUAL",
+      "facebook_page_id": "AUTO_DETECTED",
+      "notes": "Instagram now uses OAuth - no manual tokens needed!"
+    },
+    "zapier": {
+      "api_key": "OPTIONAL_FOR_API_ACCESS",
+      "account_email": "YOUR_ZAPIER_EMAIL"
+    }
+  },
+  "trigger": {
+    "type": "slack_reaction_added",
+    "config": {
+      "channel": "#claude",

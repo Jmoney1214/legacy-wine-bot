@@ -1,0 +1,170 @@
+{
+  "business_info": {
+    "name": "Legacy Wine & Liquor",
+    "location": "Downtown Sanford, FL",
+    "instagram": "@legacywineandliquor",
+    "instagram_page_id": "17841463539272316",
+    "type": "Wine, Beer & Spirits Store",
+    "vibe": "Premium, Local, Expert, Friendly",
+    "open_days": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "specialty": "Expert wine selection, premium spirits, craft beer"
+  },
+  
+  "target_audience": {
+    "demographics": ["25-55 years old", "Middle to upper income", "Wine enthusiasts", "Local Sanford residents", "Orlando metro area"],
+    "interests": ["Wine tasting", "Entertaining", "Fine dining", "Local businesses", "Quality spirits"],
+    "occasions": ["Sunday relaxation", "Weekend entertaining", "Date nights", "Special celebrations", "Gifts"]
+  },
+  
+  "product_categories": {
+    "wine": {
+      "red_wines": ["Cabernet Sauvignon", "Pinot Noir", "Merlot", "Malbec", "Zinfandel", "Syrah", "Red Blends"],
+      "white_wines": ["Chardonnay", "Sauvignon Blanc", "Pinot Grigio", "Riesling", "Moscato", "Viognier"],
+      "rose": ["Provence Rosé", "Spanish Rosé", "California Rosé", "Sparkling Rosé"],
+      "sparkling": ["Champagne", "Prosecco", "Cava", "Sparkling Wine"],
+      "dessert": ["Port", "Ice Wine", "Late Harvest", "Moscato d'Asti"]
+    },
+    "spirits": {
+      "whiskey": ["Bourbon", "Scotch", "Irish Whiskey", "Rye", "Tennessee Whiskey"],
+      "bourbon": ["Buffalo Trace", "Maker's Mark", "Woodford Reserve", "Four Roses", "Wild Turkey", "Jim Beam Black", "Knob Creek", "Elijah Craig"],
+      "scotch": ["Johnnie Walker Red", "Johnnie Walker Black", "Johnnie Walker Double Black", "Johnnie Walker Gold Reserve", "Johnnie Walker Blue Label", "Glenlivet", "Glenfiddich", "Macallan"],
+      "vodka": ["Grey Goose", "Tito's", "Absolut", "Ketel One", "Belvedere"],
+      "rum": ["Bacardi", "Captain Morgan", "Malibu", "Mount Gay", "Ron Zacapa"],
+      "tequila": ["Patrón", "Don Julio", "Casamigos", "Clase Azul", "Espolòn"],
+      "gin": ["Hendrick's", "Tanqueray", "Bombay Sapphire", "Aviation", "The Botanist"]
+    },
+    "beer": {
+      "craft": ["Local Florida breweries", "IPAs", "Stouts", "Pale Ales", "Sours"],
+      "import": ["Belgian beers", "German beers", "Mexican beers"],
+      "domestic": ["Popular American brands"]
+    },
+    "accessories": ["Decanters", "Wine glasses", "Cocktail mixers", "Bar tools", "Gift sets"]
+  },
+  
+  "post_themes": {
+    "sunday": {
+      "focus": ["Relaxation", "Brunch", "Sunday Funday", "Weekend wind-down", "Family dinners"],
+      "tone": "Relaxed, inviting, cozy",
+      "keywords": ["unwind", "perfect Sunday", "weekend", "relax", "enjoy"]
+    },
+    "weekend": {
+      "focus": ["Entertaining", "Parties", "Game day", "Celebrations"],
+      "tone": "Energetic, fun, exciting",
+      "keywords": ["celebrate", "party", "game day", "weekend vibes", "cheers"]
+    },
+    "weekday": {
+      "focus": ["After work", "Date night", "Midweek treat", "Quality time"],
+      "tone": "Sophisticated, relaxed, rewarding",
+      "keywords": ["treat yourself", "unwind", "quality", "enjoy", "discover"]
+    },
+    "special_occasions": {
+      "focus": ["Holidays", "Anniversaries", "Birthdays", "Gifts"],
+      "tone": "Celebratory, premium, thoughtful",
+      "keywords": ["celebrate", "special", "premium", "gift", "memorable"]
+    }
+  },
+  
+  "seasonal_content": {
+    "spring": {
+      "products": ["Light white wines", "Rosé", "Light cocktails", "Prosecco"],
+      "themes": ["Outdoor entertaining", "Spring celebrations", "Easter", "Mother's Day"]
+    },
+    "summer": {
+      "products": ["Rosé", "Sauvignon Blanc", "Light beers", "Vodka cocktails", "Prosecco"],
+      "themes": ["Pool parties", "BBQ", "Beach vibes", "Summer celebrations", "Father's Day"]
+    },
+    "fall": {
+      "products": ["Red wines", "Bourbon", "Craft beers", "Scotch"],
+      "themes": ["Cozy nights", "Football season", "Thanksgiving", "Harvest"]
+    },
+    "winter": {
+      "products": ["Full-bodied reds", "Premium spirits", "Champagne", "Port"],
+      "themes": ["Holidays", "New Year", "Cozy evenings", "Gift giving", "Celebrations"]
+    }
+  },
+  
+  "hashtag_library": {
+    "primary": ["#LegacyWine", "#SanfordFL", "#DowntownSanford"],
+    "wine": ["#Wine", "#WineLovers", "#WineTime", "#RedWine", "#WhiteWine", "#Rosé", "#SparklingWine", "#WineShop"],
+    "spirits": ["#Bourbon", "#Whiskey", "#Scotch", "#Vodka", "#Tequila", "#Gin", "#Rum", "#PremiumSpirits"],
+    "occasions": ["#SundayVibes", "#WeekendVibes", "#SundayFunday", "#Brunch", "#GameDay", "#DateNight"],
+    "location": ["#Florida", "#FloridaLiving", "#CentralFlorida", "#OrlandoArea", "#SupportLocal"],
+    "general": ["#Liquor", "#Spirits", "#CraftBeer", "#LocalBusiness", "#ShopLocal"]
+  },
+  
+  "content_guidelines": {
+    "tone": "Friendly, knowledgeable, approachable, premium without being pretentious",
+    "emojis": {
+      "wine": "🍷",
+      "spirits": "🥃",
+      "beer": "🍺",
+      "celebration": "🎉",
+      "location": "📍",
+      "sparkle": "✨",
+      "star": "🌟",
+      "grapes": "🍇",
+      "gift": "🎁",
+      "cheers": "🥂"
+    },
+    "call_to_action": [
+      "Visit us today!",
+      "Stop by Legacy Wine & Liquor",
+      "Come discover your new favorite",
+      "Open today in Downtown Sanford",
+      "Our experts are here to help"
+    ],
+    "caption_structure": {
+      "opening": "Attention-grabbing headline with emojis",
+      "body": "2-3 sentences about the product/occasion",
+      "products": "Bullet list of featured items with emojis",
+      "details": "Store info and call to action",
+      "location": "Location with emoji",
+      "hashtags": "8-12 relevant hashtags"
+    },
+    "image_style": {
+      "preferred": ["Clean product shots", "Lifestyle images", "Premium aesthetic", "Warm lighting"],
+      "avoid": ["Cluttered backgrounds", "Poor lighting", "Generic stock photos"]
+    }
+  },
+  
+  "post_templates": {
+    "wine_focus": {
+      "structure": "[EMOJI] [WINE TYPE] [OCCASION] [EMOJI]\n\n[Opening hook about the wine experience]\n\n[EMOJI] [Wine variety 1]\n[EMOJI] [Wine variety 2]\n[EMOJI] [Wine variety 3]\n\n[Why choose Legacy Wine & Liquor]\n\n📍 Open [Day] | Downtown Sanford, FL\n\n[Hashtags]",
+      "example_opening_hooks": [
+        "Discover the perfect bottle for your [occasion]!",
+        "Unwind with exceptional wines at exceptional prices!",
+        "Elevate your [day] with premium wine selections!",
+        "From bold reds to crisp whites - find your perfect match!"
+      ]
+    },
+    "spirits_focus": {
+      "structure": "[EMOJI] [SPIRIT TYPE] [THEME] [EMOJI]\n\n[Opening about the spirit category]\n\n[EMOJI] [Brand/Type 1]\n[EMOJI] [Brand/Type 2]\n[EMOJI] [Brand/Type 3]\n\n[Why this spirit/these brands]\n\nVisit Legacy Wine & Liquor in Downtown Sanford!\n\n📍 Open [Day] | Downtown Sanford, FL\n\n[Hashtags]"
+    },
+    "occasion_focus": {
+      "structure": "[EMOJI] [OCCASION] [EMOJI]\n\n[Hook about the occasion]\n\n[What we offer for this occasion]\n\n[Featured categories or products]\n\n[Call to action]\n\n📍 [Location details]\n\n[Hashtags]"
+    }
+  },
+  
+  "conversation_prompts": {
+    "user_requests": {
+      "create_post": ["create a post", "make a post", "post about", "write about", "send a post"],
+      "edit_post": ["edit", "change", "update", "fix", "modify"],
+      "schedule_post": ["schedule", "post later", "send tomorrow"],
+      "suggest_content": ["suggest", "what should I post", "ideas", "help me"]
+    },
+    "bot_questions": {
+      "clarify_product": "What product or category should I focus on? (wine/bourbon/spirits/beer/etc)",
+      "clarify_occasion": "What's the occasion or theme? (Sunday/weekend/celebration/etc)",
+      "clarify_tone": "What tone? (relaxed/exciting/premium/fun)",
+      "get_specifics": "Any specific brands or products to highlight?"
+    }
+  },
+  
+  "smart_suggestions": {
+    "sunday_morning": ["Brunch wines", "Mimosa supplies", "Light spirits", "Prosecco"],
+    "sunday_evening": ["Red wines", "Premium spirits", "Relaxation theme"],
+    "friday_saturday": ["Party supplies", "Game day theme", "Celebration focus", "Entertaining"],
+    "weekday": ["After-work wines", "Date night selections", "Treat yourself theme"],
+    "holidays": ["Gift sets", "Premium selections", "Celebration wines", "Special releases"]
+  }
+}

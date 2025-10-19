@@ -1,0 +1,25 @@
+{
+  "name": "legacy-wine-slack-instagram-automation",
+  "version": "1.0.0",
+  "description": "Automated Slack to Instagram posting system for Legacy Wine & Liquor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "verify": "python3 verify-setup.py",
+    "start": "./run-automation.sh"
+  },
+  "keywords": [
+    "slack",
+    "instagram",
+    "automation",
+    "zapier",
+    "mcp"
+  ],
+  "author": "Legacy Wine & Liquor",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {
+    "@modelcontextprotocol/server-zapier": "^0.1.0"
+  }
+}

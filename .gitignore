@@ -1,0 +1,40 @@
+# Environment variables (IMPORTANT: Keep .env private!)
+.env
+.env.local
+.env.*.local
+
+# Python
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+bot.log
+
+# Test files
+test-*.py
+
+# Documentation with example credentials
+POSTMAN-API-GUIDE.md
+env.env.md

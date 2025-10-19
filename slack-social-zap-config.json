@@ -1,0 +1,81 @@
+{
+  "zap_name": "Legacy Wine Slack to Social Media",
+  "version": "1.0",
+  "authentication": {
+    "slack": {
+      "workspace": "YOUR_WORKSPACE_NAME",
+      "bot_token": "xoxb-YOUR-SLACK-BOT-TOKEN",
+      "user_token": "xoxp-YOUR-SLACK-USER-TOKEN",
+      "channel_id": "C_CHANNEL_ID_FOR_CLAUDE",
+      "bot_user_id": "U_BOT_USER_ID_LEGACY_WINE"
+    },
+    "instagram": {
+      "account_id": "YOUR_INSTAGRAM_BUSINESS_ACCOUNT_ID",
+      "access_token": "YOUR_INSTAGRAM_ACCESS_TOKEN",
+      "page_id": "YOUR_FACEBOOK_PAGE_ID"
+    },
+    "zapier": {
+      "api_key": "YOUR_ZAPIER_API_KEY",
+      "account_email": "YOUR_ZAPIER_EMAIL"
+    }
+  },  "trigger": {
+    "type": "slack_reaction_added",
+    "config": {
+      "channel": "#claude",
+      "emoji": "white_check_mark",
+      "user_filter": {
+        "name": "Legacy Wine MCP Bot",
+        "match_type": "exact"
+      },
+      "polling_interval": 60
+    }
+  },
+  "parser": {
+    "message_format": {
+      "caption_regex": "Caption:\\s*(.+?)(?=Image:|$)",
+      "image_regex": "Image:\\s*(https?://[^\\s]+)",
+      "hashtags_regex": "(#\\w+)",
+      "publish_regex": "Publish:\\s*(Now|Scheduled|Draft)"
+    }
+  },
+  "actions": [
+    {
+      "id": "parse_message",
+      "type": "extract_data",
+      "input": "{{trigger.message.text}}",
+      "outputs": {        "caption": "string",
+        "image_url": "string",
+        "hashtags": "array",
+        "publish_status": "string"
+      }
+    },
+    {
+      "id": "post_to_instagram",
+      "type": "instagram_publish",
+      "conditions": {
+        "publish_status": "Now"
+      },
+      "config": {
+        "media_type": "IMAGE",
+        "caption": "{{parse_message.caption}} {{parse_message.hashtags.join(' ')}}",
+        "image_url": "{{parse_message.image_url}}",
+        "location_tag": {
+          "name": "Legacy Wine & Liquor",
+          "address": "Sanford, FL"
+        }
+      }
+    }
+  ],
+  "error_handling": {
+    "retry_attempts": 3,
+    "retry_delay": 30,    "fallback_notification": {
+      "channel": "#claude",
+      "message": "Failed to post: {{error.message}}"
+    }
+  },
+  "logging": {
+    "enabled": true,
+    "level": "INFO",
+    "destination": "/logs/slack-social-zap.log"
+  }
+}
