@@ -38,3 +38,4 @@ test-*.py
 # Documentation with example credentials
 POSTMAN-API-GUIDE.md
 env.env.md
+RENDER-ENV-VARIABLES.md
